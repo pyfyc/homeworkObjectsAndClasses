@@ -37,10 +37,12 @@ public class Book {
         this.publishingYear = publishingYear;
     }
 
+    @Override
     public String toString() {
-        return "'" + getTitle() + "'" + " by " + getAuthor() + ", published in " + getPublishingYear();
+        return "'" + title + "'" + " by " + author + ", published in " + publishingYear;
     }
 
+    @Override
     public boolean equals(Object other) {
         if (this.getClass() != other.getClass()) {
             return false;
@@ -49,6 +51,7 @@ public class Book {
         return id.equals(b2.id);
     }
 
+    @Override
     public int hashCode() {
         return Objects.hash(id);
     }

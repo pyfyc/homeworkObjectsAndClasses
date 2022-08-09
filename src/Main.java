@@ -38,10 +38,8 @@ public class Main {
         System.out.println(stephenKing.equals(stephenKing2));
         System.out.println(christine.getId());
         System.out.println(christine.equals(christine2));
-        System.out.println(stephenKing.hashCode());
-        System.out.println(stephenKing2.hashCode());
-        System.out.println(christine.hashCode());
-        System.out.println(christine2.hashCode());
+        System.out.println(stephenKing.hashCode() == stephenKing2.hashCode());
+        System.out.println(christine.hashCode() == christine2.hashCode());
     }
 
     public static void main(String[] args) {

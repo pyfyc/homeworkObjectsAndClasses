@@ -23,10 +23,12 @@ public class Author {
         return firstName.toUpperCase() + lastName.toUpperCase();
     }
 
+    @Override
     public String toString() {
         return firstName + " " + lastName;
     }
 
+    @Override
     public boolean equals(Object other) {
         if (this.getClass() != other.getClass()) {
             return false;
@@ -35,6 +37,7 @@ public class Author {
         return id.equals(a2.id);
     }
 
+    @Override
     public int hashCode() {
         return Objects.hash(id);
     }
